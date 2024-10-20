@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Paths</title>
+    <link rel="stylesheet" href="./css/career-path.css">
+</head>
+<body>
+    <header>
+        <h1>AI Career Guidance System</h1>
+        <p>Find the best career path based on your skills and experience.</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Your Resume</h2>
+            <div class="upload-container">
+                <input type="file" id="resume-upload" accept=".pdf, .doc, .docx" aria-label="Upload your resume">
+                <button id="upload-btn">Upload</button>
+            </div>
+            <p class="info-text">Please upload your resume in PDF or Word format.</p>
+        </section>
+
+        <section id="recommendations-section" style="display: none;">
+            <h2>Recommended Career Paths</h2>
+            <ul id="career-paths"></ul>
+            <p class="info-text">Explore the career paths that align with your skills!</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

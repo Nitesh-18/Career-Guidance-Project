@@ -1,0 +1,200 @@
+body {
+    background: url("../Images/blur.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative; /* Needed for the ::before pseudo-element to work */
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+    z-index: 1; /* Ensure this is above the background image */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/millennials-advance-your-career-article.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    background-position: center; /* Center the image */
+    opacity: 0.3; /* Set the visibility to 30% */
+    z-index: -1; /* Place this behind the container content */
+}
+
+.myform {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 1.1rem;
+    outline: 0;
+    max-width: 500px;
+}
+
+.tx-tfm {
+    text-transform: uppercase;
+}
+
+.mybtn {
+    border-radius: 50px;
+}
+
+.login-or {
+    position: relative;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+}
+
+.hr-or {
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.google {
+    color: #666;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+
+form .error {
+    color: #ff0000;
+}
+
+#second {
+    display: none;
+}
+
+h1 {
+    font-family: "Lobster Two", cursive;
+    font-weight: 600;
+}
+
+.nav-item {
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    margin-left: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#navi {
+    background-color: #223141;
+    margin-bottom: 1%;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    background-color: whitesmoke;
+}
+
+#course1,
+#course2,
+#course3,
+#course4,
+#course5,
+#course6 {
+    display: none;
+}
+
+.btn:hover {
+    color: #d35400;
+}
+
+.fluid p {
+    color: black;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.header h2 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #223141;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.h {
+    color: #d35400;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.mycourse {
+    background-color: #112d42;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#text,
+#links {
+    color: #d35400;
+}
+
+.navbar {
+    background-color: #223141;
+}
+
+#text {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.brand {
+    color: #0a6fe9;
+    font-family: "Oswald", sans-serif;
+}
+
+#active {
+    color: #d35400;
+}
+
+.nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+#links {
+    color: white;
+}
+
+#links:hover {
+    background-color: #d35400;
+}

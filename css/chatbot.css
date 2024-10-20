@@ -1,0 +1,93 @@
+/* Chat Icon Styling */
+#chat-icon {
+    position: fixed !important;
+    bottom: 100px !important;
+    right: 45px !important;
+    cursor: pointer;
+    z-index: 1000000000000000;
+}
+
+/* Hover Effect on Chat Icon */
+#chat-icon:hover {
+    border: 2px solid green; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover Message Styling */
+.hover-message {
+    position: absolute; /* Positioning the messages absolutely */
+    bottom: 70px; /* Position above the chat icon */
+    right: 0; /* Align with the right edge of the chat icon */
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    color: black;
+    white-space: nowrap; /* Prevent line breaks */
+    display: none; /* Keep it hidden by default */
+    opacity: 0; /* Start with an invisible state */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Chat Icon Active State */
+#chat-icon:active {
+    box-shadow: 0 0 10px green;
+}
+
+/* Chat Icon Image */
+#chat-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+/* Chat Box Styling */
+#chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#chat-window {
+    padding: 10px;
+}
+
+#messages {
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    width: 80%;
+    padding: 5px;
+}
+
+#send-btn {
+    width: 18%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+/* Toggle visibility for chat box */
+.chat-box-hidden {
+    display: none;
+}
+
+.chat-box-visible {
+    display: block;
+}
