@@ -5,6 +5,7 @@ from flask_bcrypt import Bcrypt
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required
 import pickle
 import numpy as np
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -16,7 +17,7 @@ app.config["MONGO_URI"] = (
 mongo = PyMongo(app)
 
 # JWT Configuration
-app.config["JWT_SECRET_KEY"] = "your_secret_key"  # Change this to a random secret key
+app.config["JWT_SECRET_KEY"] = os.getenv('JWT_SECRET_KEY', 'fallback_secret_key')  # Fallback if env var is not set
 jwt = JWTManager(app)
 
 # Bcrypt for password hashing
